@@ -19,6 +19,7 @@ public class InterruptTest {
         }
 
         t2.start();
+        //中断
         t2.interrupt();
     }
 }
