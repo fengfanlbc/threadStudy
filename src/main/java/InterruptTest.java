@@ -34,6 +34,7 @@ class MyService{
         } catch (Exception e) {
             System.out.println(Thread.currentThread().getName() + " receive interrupt");
         }
+        System.out.println("hello");
 
     }
 }
