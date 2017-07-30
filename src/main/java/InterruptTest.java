@@ -19,6 +19,7 @@ public class InterruptTest {
         }
 
         t2.start();
+        //中断
         t2.interrupt();
     }
 }
@@ -28,14 +29,15 @@ class MyService{
     public void service(){
         try {
             System.out.println(Thread.currentThread().getName() + " is trying to get lock");
-            //lock.lockInterruptibly();
-            lock.lock();
+            lock.lockInterruptibly();
+            //lock.lock();
             System.out.println(Thread.currentThread().getName() + " is enjoying its service");
             while(true);
         } catch (Exception e) {
             System.out.println(Thread.currentThread().getName() + " receive interrupt");
         }
         System.out.println("hello");
+
 
     }
 }
