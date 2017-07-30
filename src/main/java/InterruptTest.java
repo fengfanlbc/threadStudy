@@ -12,6 +12,7 @@ public class InterruptTest {
         Thread t2 = new MyThread(s);
         t1.start();
         try {
+            //延时
             Thread.sleep(1000);
         } catch (InterruptedException e) {
             e.printStackTrace();
