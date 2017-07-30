@@ -5,7 +5,7 @@ import java.util.concurrent.locks.ReentrantLock;
  * Created by F-victor on 2017/7/30.
  */
 public class InterruptTest {
-
+    //测试中断
     public static void main(String[] args){
         MyService s = new MyService();
         Thread t1 = new MyThread(s);
